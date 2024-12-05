@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -37,6 +37,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5ACEB7D62D01F887003B1E1B /* StoryBoards */ = {
+			isa = PBXGroup;
+			children = (
+				A878C8A922BA308000310910 /* Main.storyboard */,
+				A878C8AE22BA308100310910 /* LaunchScreen.storyboard */,
+			);
+			path = StoryBoards;
+			sourceTree = "<group>";
+		};
+		5ACEB7D72D01F8A9003B1E1B /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				A878C8A722BA308000310910 /* LoginViewController.swift */,
+				A878C8B722BA312F00310910 /* WelcomeViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		5ACEB7D82D01F8DB003B1E1B /* SupportFiles */ = {
+			isa = PBXGroup;
+			children = (
+				A878C8A522BA308000310910 /* AppDelegate.swift */,
+			);
+			path = SupportFiles;
+			sourceTree = "<group>";
+		};
 		A878C89922BA308000310910 = {
 			isa = PBXGroup;
 			children = (
@@ -56,12 +82,10 @@
 		A878C8A422BA308000310910 /* LoginApp */ = {
 			isa = PBXGroup;
 			children = (
-				A878C8A522BA308000310910 /* AppDelegate.swift */,
-				A878C8A722BA308000310910 /* LoginViewController.swift */,
-				A878C8B722BA312F00310910 /* WelcomeViewController.swift */,
-				A878C8A922BA308000310910 /* Main.storyboard */,
+				5ACEB7D62D01F887003B1E1B /* StoryBoards */,
+				5ACEB7D72D01F8A9003B1E1B /* ViewControllers */,
+				5ACEB7D82D01F8DB003B1E1B /* SupportFiles */,
 				A878C8AC22BA308100310910 /* Assets.xcassets */,
-				A878C8AE22BA308100310910 /* LaunchScreen.storyboard */,
 				A878C8B122BA308100310910 /* Info.plist */,
 			);
 			path = LoginApp;
@@ -93,8 +117,9 @@
 		A878C89A22BA308000310910 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				BuildIndependentTargetsInParallel = YES;
 				LastSwiftUpdateCheck = 1020;
-				LastUpgradeCheck = 1240;
+				LastUpgradeCheck = 1610;
 				ORGANIZATIONNAME = "Alexey Efimov";
 				TargetAttributes = {
 					A878C8A122BA308000310910 = {
@@ -204,6 +229,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -266,6 +292,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
