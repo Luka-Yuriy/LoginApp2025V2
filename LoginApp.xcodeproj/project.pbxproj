@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5ACEB7DB2D01F981003B1E1B /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ACEB7DA2D01F97D003B1E1B /* Person.swift */; };
 		A878C8A622BA308000310910 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A878C8A522BA308000310910 /* AppDelegate.swift */; };
 		A878C8A822BA308000310910 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A878C8A722BA308000310910 /* LoginViewController.swift */; };
 		A878C8AB22BA308000310910 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A878C8A922BA308000310910 /* Main.storyboard */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5ACEB7DA2D01F97D003B1E1B /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		A878C8A222BA308000310910 /* LoginApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoginApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A878C8A522BA308000310910 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A878C8A722BA308000310910 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -63,6 +65,14 @@
 			path = SupportFiles;
 			sourceTree = "<group>";
 		};
+		5ACEB7D92D01F96F003B1E1B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5ACEB7DA2D01F97D003B1E1B /* Person.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		A878C89922BA308000310910 = {
 			isa = PBXGroup;
 			children = (
@@ -82,6 +92,7 @@
 		A878C8A422BA308000310910 /* LoginApp */ = {
 			isa = PBXGroup;
 			children = (
+				5ACEB7D92D01F96F003B1E1B /* Models */,
 				5ACEB7D62D01F887003B1E1B /* StoryBoards */,
 				5ACEB7D72D01F8A9003B1E1B /* ViewControllers */,
 				5ACEB7D82D01F8DB003B1E1B /* SupportFiles */,
@@ -165,6 +176,7 @@
 			files = (
 				A878C8B822BA312F00310910 /* WelcomeViewController.swift in Sources */,
 				A878C8A822BA308000310910 /* LoginViewController.swift in Sources */,
+				5ACEB7DB2D01F981003B1E1B /* Person.swift in Sources */,
 				A878C8A622BA308000310910 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
