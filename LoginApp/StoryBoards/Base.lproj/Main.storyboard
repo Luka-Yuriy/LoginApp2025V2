@@ -177,10 +177,10 @@
             </objects>
             <point key="canvasLocation" x="2336" y="825"/>
         </scene>
-        <!--View Controller-->
+        <!--User Description View Controller-->
         <scene sceneID="IBU-HJ-pOI">
             <objects>
-                <viewController id="DnB-ku-Uyf" sceneMemberID="viewController">
+                <viewController id="DnB-ku-Uyf" customClass="UserDescriptionViewController" customModule="LoginApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gLa-3H-JbV">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

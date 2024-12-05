@@ -11,10 +11,11 @@ struct Person {
     let surname: String
     let age: Int
     let email: String
+    let hobby: String
 }
 
 extension Person {
     static func getPerson() -> Person {
-        Person(name: "Yurii", surname: "Luka", age: 28, email: "yurii@gmail.com")
+        Person(name: "Yurii", surname: "Luka", age: 28, email: "yurii@gmail.com", hobby: "Snowboarding, Electro Guitar")
     }
 }
