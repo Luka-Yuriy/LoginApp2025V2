@@ -15,7 +15,6 @@ struct Person {
 
 extension Person {
     static func getPerson() -> Person {
-        let person = Person(name: "Yurii", surname: "Luka", age: 28, email: "yurii@gmail.com")
-        return person
+        Person(name: "Yurii", surname: "Luka", age: 28, email: "yurii@gmail.com")
     }
 }
