@@ -9,15 +9,18 @@
 import UIKit
 
 class LoginViewController: UIViewController {
-    
+    //MARK: - IBOuntlets
     @IBOutlet var userNameTextField: UITextField!
     @IBOutlet var passwordTextField: UITextField!
     
+    //MARK: - Private properties
     private let user = "11"
     private let password = "2"
     
+    //MARK: - Properties
     var text: String = ""
     
+    //MARK: - Ovarride methods
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let tabBarVC = segue.destination as? UITabBarController else { return }
         guard let viewControllers = tabBarVC.viewControllers else { return }
@@ -33,6 +36,7 @@ class LoginViewController: UIViewController {
         view.endEditing(true)
     }
     
+    //MARK: - IBAction
     @IBAction func logInPressed() {
         guard userNameTextField.text == user, passwordTextField.text == password else {
             showAlert(
@@ -56,6 +60,7 @@ class LoginViewController: UIViewController {
         passwordTextField.text = ""
     }
     
+    //MARK: - Private methods
     private func showAlert(title: String, message: String, textField: UITextField? = nil) {
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
         let okAction = UIAlertAction(title: "OK", style: .default) { _ in

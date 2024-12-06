@@ -9,9 +9,10 @@
 import UIKit
 
 class UserInfoViewController: UIViewController {
-    
+    //MARK: - Private properties
     private let person = Person.getPerson()
-
+    
+    //MARK: - Ovarride methods
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.title = ("\(person.name) \(person.surname)")

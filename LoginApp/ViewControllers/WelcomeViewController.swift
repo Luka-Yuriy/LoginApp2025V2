@@ -9,11 +9,14 @@
 import UIKit
 
 class WelcomeViewController: UIViewController {
-    
+    //MARK: - IBOuntlets
     @IBOutlet var welcomeLabel: UILabel!
-    private let person = Person.getPerson()
+   
+    //MARK: - Properties
     var userName = ""
     
+    //MARK: - Private properties
+    private let person = Person.getPerson()
     private let primaryColor = UIColor(
         red: 210/255,
         green: 109/255,
@@ -27,6 +30,7 @@ class WelcomeViewController: UIViewController {
         alpha: 1
     )
     
+    //MARK: - Ovarride methods
     override func viewDidLoad() {
         super.viewDidLoad()
         view.addVerticalGradientLayer(topColor: primaryColor, bottomColor: secondaryColor)
@@ -34,7 +38,7 @@ class WelcomeViewController: UIViewController {
     }
 }
 
-// MARK: - Set background color
+// MARK: - Extentions
 extension UIView {
     func addVerticalGradientLayer(topColor: UIColor, bottomColor: UIColor) {
         let gradient = CAGradientLayer()
