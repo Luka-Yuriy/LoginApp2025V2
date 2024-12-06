@@ -10,11 +10,11 @@ import UIKit
 
 class UserInfoViewController: UIViewController {
     
-    var userName = "1234"
+    private let person = Person.getPerson()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        navigationItem.title = userName
+        navigationItem.title = ("\(person.name) \(person.surname)")
     }
 
 }

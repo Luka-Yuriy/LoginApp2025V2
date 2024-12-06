@@ -6,16 +6,19 @@
 //  Copyright © 2024 Alexey Efimov. All rights reserved.
 //
 
+import UIKit
+
 struct Person {
     let name: String
     let surname: String
     let age: Int
     let email: String
     let hobby: String
+    let photo: UIImage!
 }
 
 extension Person {
     static func getPerson() -> Person {
-        Person(name: "Yurii", surname: "Luka", age: 28, email: "yurii@gmail.com", hobby: "Snowboarding, Electro Guitar")
+        Person(name: "Yurii", surname: "Luka", age: 28, email: "yurii@gmail.com", hobby: "Snowboarding, Electro Guitar", photo: UIImage(named: "apple"))
     }
 }

@@ -21,13 +21,9 @@ class LoginViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let tabBarVC = segue.destination as? UITabBarController else { return }
         guard let viewControllers = tabBarVC.viewControllers else { return }
-        
         viewControllers.forEach { viewController in
             if let welcomeVC = viewController as? WelcomeViewController {
                 welcomeVC.userName = user
-            } else if let navigationVC = viewController as? UINavigationController {
-                guard let userInfoVC = navigationVC.topViewController as? UserInfoViewController else { return }
-                userInfoVC.userName = user
             }
         }
     }
