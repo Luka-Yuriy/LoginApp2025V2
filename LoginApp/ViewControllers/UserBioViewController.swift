@@ -10,14 +10,18 @@ import UIKit
 
 class UserBioViewController: UIViewController {
     //MARK: - IBOuntlets
-    @IBOutlet var userBioLabel: UILabel!
+    @IBOutlet var userBioTextView: UITextView!
+    
+    //MARK: - Properties
+    var user: User!
     
     //MARK: - Ovarride methods
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        view.addVerticalGradientLayer()
+        userBioTextView.backgroundColor = .clear
+        userBioTextView.textColor = .white
+        navigationItem.title = "\(user.person.fullName)"
+        userBioTextView.text = user.person.bio
     }
-    
-    //MARK: - Private methods
-
 }

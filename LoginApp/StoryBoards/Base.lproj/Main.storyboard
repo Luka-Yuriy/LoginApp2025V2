@@ -287,6 +287,15 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="ageLabel" destination="Ifi-Ng-tIl" id="kTh-5Q-3yr"/>
+                        <outlet property="compatyLabel" destination="MPP-aT-5XJ" id="THg-fK-3BE"/>
+                        <outlet property="deportamentLabel" destination="gcg-Xw-JX8" id="yPZ-mf-Syt"/>
+                        <outlet property="jobTitleLabel" destination="0KL-1Y-jnE" id="YX0-o0-h2H"/>
+                        <outlet property="nameLabel" destination="sNX-sc-arg" id="03r-No-YYO"/>
+                        <outlet property="photoImage" destination="hFp-MM-LpC" id="Qbu-uc-bOC"/>
+                        <outlet property="surNameLabel" destination="K7L-VN-zMy" id="Dcy-9u-XQJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ef9-uX-6xp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -300,25 +309,27 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RnS-Un-dGh">
-                                <rect key="frame" x="16" y="92.5" width="288" height="183"/>
-                                <string key="text">Tim grew up in Mallorca, Alabama. His father was a shipyard worker, his mother was a housewife. Cook received a bachelor's degree in Industrial Engineering from Auburn University in 1982 and an MBA from Duke University's Fuqua School in 1988. His career began at IBM, where he worked for 12 years.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="geU-2m-P0C">
+                                <rect key="frame" x="16" y="100.5" width="288" height="255.5"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="J5q-v8-FE4"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="J5q-v8-FE4" firstAttribute="trailing" secondItem="RnS-Un-dGh" secondAttribute="trailing" constant="16" id="Ms5-S4-EUR"/>
-                            <constraint firstItem="RnS-Un-dGh" firstAttribute="leading" secondItem="J5q-v8-FE4" secondAttribute="leading" constant="16" id="OPV-qf-lxZ"/>
-                            <constraint firstItem="RnS-Un-dGh" firstAttribute="top" secondItem="J5q-v8-FE4" secondAttribute="top" id="kBf-B5-yQ4"/>
+                            <constraint firstItem="J5q-v8-FE4" firstAttribute="trailing" secondItem="geU-2m-P0C" secondAttribute="trailing" constant="16" id="Agb-op-Owv"/>
+                            <constraint firstItem="geU-2m-P0C" firstAttribute="top" secondItem="J5q-v8-FE4" secondAttribute="top" constant="8" id="GZn-PH-0Ha"/>
+                            <constraint firstItem="geU-2m-P0C" firstAttribute="leading" secondItem="J5q-v8-FE4" secondAttribute="leading" constant="16" id="HeN-fb-s9Y"/>
+                            <constraint firstItem="J5q-v8-FE4" firstAttribute="bottom" secondItem="geU-2m-P0C" secondAttribute="bottom" constant="163" id="MuE-at-HiN"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Iin-UQ-eip"/>
                     <connections>
-                        <outlet property="userBioLabel" destination="RnS-Un-dGh" id="BRh-hr-wfJ"/>
+                        <outlet property="userBioTextView" destination="geU-2m-P0C" id="ypz-Be-SOv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6bJ-a9-Dec" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -328,7 +339,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="xur-6S-DjC">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="CHO-L3-455" sceneMemberID="viewController">
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="CHO-L3-455" customClass="TabBarController" customModule="LoginApp" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="2aq-0M-KwF">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
@@ -368,6 +379,9 @@
         <image name="person.fill" catalog="system" width="128" height="120"/>
         <systemColor name="groupTableViewBackgroundColor">
             <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

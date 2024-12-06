@@ -24,7 +24,7 @@ struct Person {
     let name: String
     let surname: String
     let photo: String
-    let age: Int
+    let age: String
     let bio: String
     let job: Company
     
@@ -36,8 +36,8 @@ struct Person {
         Person(
             name: "Tim",
             surname: "Cook",
-            photo: "TimCook",
-            age: 68,
+            photo: "Cook",
+            age: "68",
             bio: """
             Вырос в городе Мальорке, штат Алабама. Его отец был работником верфи, мать — домохозяйкой. Получил степень бакалавра в области промышленного производства в университете Обёрна в 1982 году и диплом МВА в школе Фукуа университета Дьюка в 1988 году. Карьера началась в компании IBM, где проработал 12 лет.
             """,
