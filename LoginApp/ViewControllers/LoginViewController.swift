@@ -17,9 +17,6 @@ class LoginViewController: UIViewController {
     private let user = "11"
     private let password = "2"
     
-    //MARK: - Properties
-    var text: String = ""
-    
     //MARK: - Ovarride methods
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let tabBarVC = segue.destination as? UITabBarController else { return }
